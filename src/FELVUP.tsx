@@ -3,6 +3,7 @@ import { CharacterPage } from './components/CharacterPage'
 import { CharacterContextProvider, initialUnitProps } from './components/CharacterContext'
 import {Routes, Route} from 'react-router-dom'
 import './FELVUP.css'
+import React from 'react'
 
 
 export const FELVUP = () => {
@@ -15,7 +16,7 @@ export const FELVUP = () => {
 
     <Routes>
       <Route path='/' element={<CharacterSelect /> }/>
-      <Route path='/unit/:id' element={<CharacterPage unit={initialUnitProps}/>}/>
+      <Route path='/FELVUP/unit/:id' element={<CharacterPage unit={initialUnitProps}/>}/>
      
     </Routes>
     </CharacterContextProvider>

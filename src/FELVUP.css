@@ -28,6 +28,12 @@
     box-sizing: border-box;
 }
 
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
 #root-lv {
     padding: 0;
     background-color: var(--alabaster);
@@ -78,7 +84,7 @@ body .stats-page-container {
 .character-select h4,
 .stats-page-container h4 {
     margin: -5px 0 -5px 0;
-    font-size: 40px
+    font-size: 40px;
 }
 
 .character-select h3,
@@ -95,6 +101,8 @@ body .stats-page-container {
 .character-select a:visited,
 .character-page a:visited {
     color: inherit;
+    -webkit-text-fill-color: var(--sage);
+    -webkit-text-stroke: 1px rgb(151, 111, 11);
 }
 
 .stats-page-container {
@@ -726,6 +734,7 @@ body .stats-page-container {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-align: center;
 }
 
 .promotion-path {
@@ -754,7 +763,12 @@ body .stats-page-container {
     border: transparent;
     height: 100px;
     width: 100px;
+    padding: 1rem;
     border-radius: 5px;
+}
+
+.promo-btn img {
+    width: 80%;
 }
 
 

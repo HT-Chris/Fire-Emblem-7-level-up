@@ -1,5 +1,6 @@
 import { magicUser} from '../assets/Unit-Data'
 import {useContext, useEffect, FC, useState} from 'react'
+import React from 'react'
 import { UnitProps, CharacterContext } from './CharacterContext'
 import { useParams} from 'react-router-dom'
 import { Promotion } from './Promotion'

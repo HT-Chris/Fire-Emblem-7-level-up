@@ -1,6 +1,7 @@
 
 import{ unitData } from '../assets/Unit-Data'
 import { Character } from './Character'
+import React from 'react'
 
 
 export const CharacterSelect = () => {

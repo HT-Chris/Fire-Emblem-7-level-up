@@ -1,5 +1,5 @@
 
-import {useState, createContext, ReactNode} from 'react'
+import React, {useState, createContext, ReactNode} from 'react'
 import { unitData, classTree, jobMax, promotionGains } from '../assets/Unit-Data'
 import { Link } from 'react-router-dom'
 import { CharacterPage } from './CharacterPage'
@@ -224,7 +224,7 @@ type CharacterContext = {
 
 
 unitData.map((unit)=>{
-	<Link to={`/unit/${unit.name}`}>
+	<Link to={`/FELVUP/unit/${unit.name}`}>
 		<CharacterPage unit={unit}/>
 	</Link>
 })
