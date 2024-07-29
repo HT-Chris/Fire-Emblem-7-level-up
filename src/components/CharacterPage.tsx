@@ -6,6 +6,7 @@ import { useParams} from 'react-router-dom'
 import { Promotion } from './Promotion'
 import { LevelUpAnimation } from './LevelUpAmimation'
 import { StatUI } from './StatUI'
+import { Link } from 'react-router-dom'
 
 
 export const CharacterPage :FC<UnitProps>  =()=> {
@@ -96,6 +97,15 @@ export const CharacterPage :FC<UnitProps>  =()=> {
 
   return (
     <>
+
+    
+<button className="back-btn">
+            <Link to='/FELVUP'>
+            Back
+            </Link>
+        </button>
+
+
     <div id='character-page' className='stats-page-container'>
             <LevelUpAnimation/>
             <div className={`promotion-box ${showPromotion ? '': 'hide'}`}>

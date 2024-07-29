@@ -149,6 +149,15 @@ body .stats-page-container {
     width: 500px;
 }
 
+.back-btn {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: var(--sage);
+    box-shadow: 5px 5px 0px 0px black;
+    font-size: 2rem;
+}
+
 
 /*   level up animation */
 
