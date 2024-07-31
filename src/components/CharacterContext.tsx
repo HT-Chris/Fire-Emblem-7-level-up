@@ -572,6 +572,15 @@ const statsChange = (stat:string, chara:unitType) => {
 			const percent = Math.random() * 100
 			const n = parseInt(growth[stat])
 	
+			if(n > 100){
+				const g = n - 100
+				if(percent <= g){
+					return String(parseInt(chara.base[stat]) + 2)
+				}else{
+					return String(parseInt(chara.base[stat]) + 1)
+				}
+			}
+			
 			if(percent <= n){
 				return String(parseInt(chara.base[stat]) + 1)
 			}
